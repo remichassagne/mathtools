@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mathtools
+Version: 0.0.1
+Summary: Math Processing Python Tools
+Home-page: 
+Author: Remi Chassagne
+Author-email: remi.chassagne@univ-grenoble-alpes.fr
+License: GPLv2
+Keywords: Math
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE.txt
+License-File: AUTHORS.txt

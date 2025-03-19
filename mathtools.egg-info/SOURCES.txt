@@ -1,0 +1,12 @@
+AUTHORS.txt
+LICENSE.txt
+README.md
+setup.py
+mathtools/__init__.py
+mathtools/_version.py
+mathtools/functions.py
+mathtools.egg-info/PKG-INFO
+mathtools.egg-info/SOURCES.txt
+mathtools.egg-info/dependency_links.txt
+mathtools.egg-info/requires.txt
+mathtools.egg-info/top_level.txt
