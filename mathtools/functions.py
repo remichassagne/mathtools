@@ -36,15 +36,33 @@ def integrate(variable, function, dz=None):
 
     return integral
 
+def integrate_slice(dz, function):
+    """
+    Integrate function over a grid which cells have width dz.
+    """
+    return sum(dz*function)
+
 def primitive(variable, function):
     """
     Compute a primitive of function
     """
     primit = [0.0]
     for i in range(1,len(function)):
-        primit.append(integrate(variable[:i],function[:i]))
+        primit.append(integrate(variable[:i], function[:i]))
 
     return np.array(primit)
+
+def primitive_slice(dz, function):
+    """
+    Compute a primitive of function over a grid which cells
+    width are dvariable
+    """
+    primit = np.zeros(len(function))
+    for i in range(len(function)):
+        primit[i] = (integrate_slice(dz[:i], function[:i])
+                     + dz[i]/2 * function[i])
+    return primit
+
 
 def derivate_wall(variable, function, zwall=0, wall_value=0):
     """
